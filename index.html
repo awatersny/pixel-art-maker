@@ -9,6 +9,38 @@
   <title>Pixel Art Maker</title>
 </head>
 <body>
-  <h1>Sanity check</h1>
+  <h1>Pixel Art Maker</h1>
+
+  <form id="sizePicker">
+    <div id="gridHeight">
+      Grid Height:
+      <input 
+        type="number" 
+        id="inputHeight" 
+        name="height" 
+        min="1" 
+        value="1"
+      >
+    </div>
+
+    <div id="gridWidth">
+      Grid Width:
+      <input 
+        type="number" 
+        id="inputWidth" 
+        name="width" 
+        min="1" 
+        value="1"
+      >
+    </div>
+
+    <input type="submit">
+  </form>
+
+  <h2>Pick A Color</h2>
+  <input type="color" id="colorPicker">
+
+  <h2>Design Canvas</h2>
+  <table id="pixelCanvas"></table>
 </body>
 </html>
