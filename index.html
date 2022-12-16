@@ -18,8 +18,9 @@
         type="number" 
         id="inputHeight" 
         name="height" 
-        min="1" 
-        value="1"
+        min="1"
+        max="20"
+        value="3"
       >
     </div>
 
@@ -29,8 +30,9 @@
         type="number" 
         id="inputWidth" 
         name="width" 
-        min="1" 
-        value="1"
+        min="1"
+        max="20"
+        value="3"
       >
     </div>
 
@@ -41,6 +43,24 @@
   <input type="color" id="colorPicker">
 
   <h2>Design Canvas</h2>
-  <table id="pixelCanvas"></table>
+  <table id="pixelCanvas">
+    <tbody>
+      <tr class="canvasRow">
+        <td class="pixelCell"></td>
+        <td class="pixelCell"></td>
+        <td class="pixelCell"></td>
+      </tr>
+      <tr class="canvasRow">
+        <td class="pixelCell"></td>
+        <td class="pixelCell"></td>
+        <td class="pixelCell"></td>
+      </tr>
+      <tr class="canvasRow">
+        <td class="pixelCell"></td>
+        <td class="pixelCell"></td>
+        <td class="pixelCell"></td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>

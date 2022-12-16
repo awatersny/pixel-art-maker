@@ -11,3 +11,14 @@ body {
   align-items: center;
   width: 80%;
 }
+
+#pixelCanvas {
+  border: 1px solid #000;
+  border-spacing: 0;
+}
+
+.pixelCell {
+  border: 1px solid #000;
+  height: 30px;
+  width: 30px;
+}
