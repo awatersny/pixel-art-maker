@@ -12,13 +12,22 @@ body {
   width: 80%;
 }
 
+#submit {
+  height: 40px;
+  line-height: normal;
+}
+
 #pixelCanvas {
   border: 1px solid #000;
   border-spacing: 0;
 }
 
+#inputHeight, #inputWidth {
+  width: 50px;
+}
+
 .pixelCell {
-  border: 1px solid #000;
+  border: 1px solid #bbb;
   height: 30px;
   width: 30px;
 }

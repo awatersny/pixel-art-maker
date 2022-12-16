@@ -12,31 +12,35 @@
   <h1>Pixel Art Maker</h1>
 
   <form id="sizePicker">
-    <div id="gridHeight">
+    <div class="dimensionField">
       Grid Height:
       <input 
-        type="number" 
-        id="inputHeight" 
-        name="height" 
+        type="number"
+        id="inputHeight"
+        name="height"
         min="1"
         max="20"
         value="3"
       >
     </div>
 
-    <div id="gridWidth">
+    <div class="dimensionField">
       Grid Width:
       <input 
-        type="number" 
-        id="inputWidth" 
-        name="width" 
+        type="number"
+        id="inputWidth"
+        name="width"
         min="1"
         max="20"
         value="3"
       >
     </div>
 
-    <input type="submit">
+    <input
+      id="submit"
+      type="submit"
+      value="Change Dimensions"
+    >
   </form>
 
   <h2>Pick A Color</h2>
@@ -44,21 +48,21 @@
 
   <h2>Design Canvas</h2>
   <table id="pixelCanvas">
-    <tbody>
+    <tbody id="canvasBody">
       <tr class="canvasRow">
-        <td class="pixelCell"></td>
-        <td class="pixelCell"></td>
-        <td class="pixelCell"></td>
+        <td class="pixelCell" id="0"></td>
+        <td class="pixelCell" id="1"></td>
+        <td class="pixelCell" id="2"></td>
       </tr>
       <tr class="canvasRow">
-        <td class="pixelCell"></td>
-        <td class="pixelCell"></td>
-        <td class="pixelCell"></td>
+        <td class="pixelCell" id="3"></td>
+        <td class="pixelCell" id="4"></td>
+        <td class="pixelCell" id="5"></td>
       </tr>
       <tr class="canvasRow">
-        <td class="pixelCell"></td>
-        <td class="pixelCell"></td>
-        <td class="pixelCell"></td>
+        <td class="pixelCell" id="6"></td>
+        <td class="pixelCell" id="7"></td>
+        <td class="pixelCell" id="8"></td>
       </tr>
     </tbody>
   </table>
