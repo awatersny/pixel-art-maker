@@ -2,9 +2,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffeebb;
+}
+
+h1 {
+  font-size: 75pt;
+  text-shadow: -5px 10px 15px #000;
+}
+
+h2 {
+  font-size: 30pt;
 }
 
 #sizePicker {
+  font-size: 15pt;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -20,6 +31,7 @@ body {
 #pixelCanvas {
   border: 1px solid #000;
   border-spacing: 0;
+  background-color: #fff;
 }
 
 #inputHeight, #inputWidth {
@@ -29,10 +41,11 @@ body {
 #prompt {
   font-size: 20px;
   padding: 10px;
+  background-color: #fff;
 }
 
 .pixelCell {
-  border: 1px solid #ccc;
+  border: 1px solid #c9c9c9;
   height: 20px;
   width: 20px;
 }
