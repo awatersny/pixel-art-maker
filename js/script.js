@@ -10,17 +10,22 @@ sizePicker.addEventListener("submit", generateGrid);
 pixelCanvas.addEventListener("click", colorCell);
 
 function generateGrid(evt) {
-  console.log()
   let height = evt.target[0].value;
   let width = evt.target[1].value;
-  let pixels = height * width;
-  for(let i = 0; i < pixels; i++) {
-    grid.push("");
+  let id = 0;
+  canvasBody.innerHTML = "";
+  for (let row = 0; row < height; row++) {
+    const canvasRow = document.createElement("tr");
+    canvasRow.className = "canvasRow";
+    for (let cell = 0; cell < width; cell++) {
+      const pixelCell = document.createElement("td");
+      pixelCell.className = "pixelCell";
+      pixelCell.id = id;
+      canvasRow.appendChild(pixelCell);
+      id++;
+    }
+    canvasBody.appendChild(canvasRow);
   }
-  grid.forEach((cell, id) => {
-    //
-    console.log(id);
-  })
 }
 
 function colorCell(evt) {
@@ -34,6 +39,3 @@ function colorCell(evt) {
   }
   console.log(evt.target.className)
 }
-
-
-console.log(canvasBody.childNodes)
