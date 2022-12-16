@@ -26,6 +26,11 @@ body {
   width: 50px;
 }
 
+#prompt {
+  font-size: 20px;
+  padding: 10px;
+}
+
 .pixelCell {
   border: 1px solid #ccc;
   height: 20px;
