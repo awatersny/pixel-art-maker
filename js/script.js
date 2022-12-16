@@ -29,7 +29,7 @@ function generateGrid(evt) {
 }
 
 function colorCell(evt) {
-  if(evt.target.id !== "pixelCanvas") {
+  if(evt.target.className === "pixelCell") {
     if(evt.target.style.backgroundColor) {
       evt.target.style.backgroundColor = "";
     }
