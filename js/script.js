@@ -26,16 +26,12 @@ function generateGrid(evt) {
     }
     canvasBody.appendChild(canvasRow);
   }
+  colorPicker.value = "#000000";
+  console.log(colorPicker);
 }
 
 function colorCell(evt) {
   if(evt.target.className === "pixelCell") {
-    if(evt.target.style.backgroundColor) {
-      evt.target.style.backgroundColor = "";
-    }
-    else {
       evt.target.style.backgroundColor = colorPicker.value;
-    }
   }
-  console.log(evt.target.className)
 }
