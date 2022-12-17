@@ -7,7 +7,7 @@ const canvasBody = document.getElementById("canvasBody");
 const pixelCells = document.getElementsByClassName("pixelCell");
 
 sizePicker.addEventListener("submit", generateGrid);
-pixelCanvas.addEventListener("click", colorCell);
+// pixelCanvas.addEventListener("click", colorCell);
 
 function generateGrid(evt) {
   let height = evt.target[0].value;
@@ -21,6 +21,7 @@ function generateGrid(evt) {
       const pixelCell = document.createElement("td");
       pixelCell.className = "pixelCell";
       pixelCell.id = id;
+      pixelCell.addEventListener("click", colorCell);
       canvasRow.appendChild(pixelCell);
       id++;
     }
@@ -31,7 +32,5 @@ function generateGrid(evt) {
 }
 
 function colorCell(evt) {
-  if(evt.target.className === "pixelCell") {
-      evt.target.style.backgroundColor = colorPicker.value;
-  }
+  evt.target.style.backgroundColor = colorPicker.value;
 }

@@ -26,12 +26,18 @@ h2 {
 #submit {
   height: 30px;
   line-height: normal;
+  box-shadow: -3px 3px 5px #000;
+}
+
+#submit:hover {
+  box-shadow: none;
 }
 
 #pixelCanvas {
-  border: 1px solid #000;
+  border: 10px ridge #000;
   border-spacing: 0;
   background-color: #fff;
+  box-shadow: -5px 7px 10px #000;
 }
 
 #inputHeight, #inputWidth {
