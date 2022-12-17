@@ -4,7 +4,7 @@ const canvasBody = document.getElementById("canvasBody");
 
 sizePicker.addEventListener("submit", generateGrid);
 
-const removeChildren = element => {
+function removeChildren(element) {
   while(element.children.length){
     element.removeChild(element.children[0]);
   }
