@@ -1,13 +1,8 @@
-let grid = [];
-
 const sizePicker = document.getElementById("sizePicker");
 const colorPicker = document.getElementById("colorPicker");
-const pixelCanvas = document.getElementById("pixelCanvas");
 const canvasBody = document.getElementById("canvasBody");
-const pixelCells = document.getElementsByClassName("pixelCell");
 
 sizePicker.addEventListener("submit", generateGrid);
-// pixelCanvas.addEventListener("click", colorCell);
 
 function generateGrid(evt) {
   let height = evt.target[0].value;
