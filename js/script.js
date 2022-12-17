@@ -4,11 +4,17 @@ const canvasBody = document.getElementById("canvasBody");
 
 sizePicker.addEventListener("submit", generateGrid);
 
+const removeChildren = element => {
+  while(element.children.length){
+    element.removeChild(element.children[0]);
+  }
+}
+
 function generateGrid(evt) {
   let height = evt.target[0].value;
   let width = evt.target[1].value;
   let id = 0;
-  canvasBody.innerHTML = "";
+  removeChildren(canvasBody);
   for (let row = 0; row < height; row++) {
     const canvasRow = document.createElement("tr");
     canvasRow.className = "canvasRow";
