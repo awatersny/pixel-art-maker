@@ -52,6 +52,6 @@ h2 {
 
 .pixelCell {
   border: 1px solid #c9c9c9;
-  height: 20px;
-  width: 20px;
+  height: 1vw;
+  width: 1vw;
 }
