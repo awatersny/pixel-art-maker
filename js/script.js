@@ -29,7 +29,6 @@ function generateGrid(evt) {
     canvasBody.appendChild(canvasRow);
   }
   colorPicker.value = "#000000";
-  console.log(colorPicker);
 }
 
 function colorCell(evt) {
